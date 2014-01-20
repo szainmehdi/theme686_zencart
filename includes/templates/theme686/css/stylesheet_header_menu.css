@@ -1,0 +1,82 @@
+body {  
+	behavior: url(includes/csshover.htc);
+	}
+
+div#dropMenu li a:hover, div#dropMenu li.submenu li.submenu:hover {}
+
+	
+#dropMenuWrapper {
+	width:100%;
+	margin:0;
+	}
+	
+div#dropMenu {
+	z-index:2;
+	position:relative;
+	}
+
+div#dropMenu ul {
+	margin: 0; 
+	padding: 0;
+	}
+	
+div#dropMenu li {
+	position: relative; 
+	list-style: none; 
+	margin: 0; 
+	float: left; 
+	line-height: 1em;
+	}
+	
+div#dropMenu ul.level1 {}
+	
+div#dropMenu li:hover {}
+div#dropMenu li.submenu {}
+div#dropMenu li.submenu:hover {}
+div#dropMenu li a {display: block;} 
+div#dropMenu>ul a {width: auto;}
+div#dropMenu ul ul {position: absolute; display: none; width:195px;background:#2c2929; padding:13px 0 10px 0;}
+div#dropMenu ul ul li {width:167px;  padding:0; text-align:left;}
+div#dropMenu ul ul li a{ color:#8c8a8b; font-size:12px; line-height:18px; text-decoration:none; padding: 3px 20px;}
+div#dropMenu ul ul li a:hover{color:#FFFFFF; background:url(../images/cat-ul2-a-active.png) repeat-x 0 0;}
+
+div#dropMenu li.submenu li.submenu {}
+div#dropMenu ul.level1 li.submenu:hover ul.level2, 
+div#dropMenu ul.level2 li.submenu:hover ul.level3,
+div#dropMenu ul.level3 li.submenu:hover ul.level4,
+div#dropMenu ul.level4 li.submenu:hover ul.level5 {display:block;z-index:2;}
+div#dropMenu ul.level2 {top:52px; z-index:2;}
+div#dropMenu ul.level3, div#dropMenu ul.level4, div#dropMenu ul.level5 {top: 0; left:167px;}
+div#dropMenu ul.level2 a { text-transform:none;}  /* this is text color on drop-down submenu */
+div#dropMenu ul.level2 a:hover {}
+
+div#dropMenu ul.level1 { padding:0px 0 0 0px; }
+div#dropMenu ul.level1>li:first-child{ background:none; padding-left:0;}
+div#dropMenu ul.level1>li{
+	background:url(../images/cat-line.gif) no-repeat 0 0;
+	width:163px;
+	display:block;
+	text-align:center;
+}
+div#dropMenu ul.level1>li>a{
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:normal;
+	font-size:11px;
+	line-height:13px;
+	color:#fff;
+	min-height:30px;
+	padding:12px 25px 14px 25px;
+}
+div#dropMenu ul.level1>li:first-child{
+	width:165px;
+}
+div#dropMenu ul.level1>li.submenu > a:hover, 
+div#dropMenu ul.level1>li.submenu:hover > a,
+div#dropMenu ul.level1>li>a:hover{ background:url(../images/menu-a.gif) repeat-x 0 0;}
+
+div#dropMenu ul.level2 { width:167px; background:#2c2929; padding:13px 0 10px 0;}
+div#dropMenu ul.level2>li:first-child{}
+div#dropMenu ul.level2>li{width:167px;  padding:0; text-align:left;}
+div#dropMenu ul.level2>li>a{ color:#8c8a8b; font-size:12px; line-height:18px; text-decoration:none; padding: 3px 20px;}
+div#dropMenu ul.level2>li>a:hover{ color:#FFFFFF; background:url(../images/cat-ul2-a-active.png) repeat-x 0 0; }
