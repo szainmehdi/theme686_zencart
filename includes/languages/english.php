@@ -391,8 +391,8 @@
   define('TEXT_NUMBER_SYMBOL', '# ');
 
 // banner_box
-  define('BOX_HEADING_BANNER_BOX','Sponsors');
-  define('TEXT_BANNER_BOX','Please Visit Our Sponsors ...');
+  define('BOX_HEADING_BANNER_BOX','Chat Now');
+  define('TEXT_BANNER_BOX','Chat with our Sales Rep.');
 
 // banner box 2
   define('BOX_HEADING_BANNER_BOX2','Have you seen ...');

@@ -37,13 +37,12 @@
 <?php
 if (!isset($flag_disable_header) || !$flag_disable_header) {
 ?>
-
     <div id="header">
     	<div class="logo">
             <!-- ========== LOGO ========== -->
-                <a href="<?php echo zen_href_link(FILENAME_DEFAULT);?>"><?php echo zen_image(DIR_WS_TEMPLATE.'images/logo.jpg'); ?></a>
+                <a href="<?php echo zen_href_link(FILENAME_DEFAULT);?>"><?php echo zen_image(DIR_WS_TEMPLATE.'images/logo1.jpg'); ?></a>
             <!-- ========================== -->
-        </div>
+        </div>		
         <div class="menu">
             <!-- ========== MENU ========== -->
             <?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' and (strstr(EXCLUDE_ADMIN_IP_FOR_MAINTENANCE, $_SERVER['REMOTE_ADDR'])))) { ?>
@@ -69,7 +68,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
                 <?php } ?>
             <!-- ====================================== -->
         </div>
-        <div class="cart">
+		<div class="cart">
             <!-- ========== SHOPPING CART ========== -->
                 <?php 
                     if ($_SESSION['cart']->count_contents() == 1){
@@ -83,7 +82,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
                 <?php require($template->get_template_dir('tpl_shopping_cart_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_shopping_cart_header.php'); 
                         echo $content;?>
             <!-- =================================== -->
-        </div>
+        </div>		
         <div id="head-search">
             <!-- ========== SEARCH ========== -->
                 <span class="label"><?php echo BOX_HEADING_SEARCH;?></span>
@@ -133,11 +132,9 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
         	<!--bof-drop down menu display-->
 				<?php require($template->get_template_dir('tpl_drop_menu.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_drop_menu.php');?>
             <!--eof-drop down menu display-->
-        </div>
+        </div>		
 	</div>
-    
-	
-	
+   	
 	
 	<?php 
 		if (HEADER_SALES_TEXT != '' || (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2))) {

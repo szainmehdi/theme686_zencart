@@ -33,7 +33,32 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 			<?php } ?>
 			
 			</div>
-		</div>
+		</div><br>
+		<hr>
+		<table width="940" border="1" align="center" cellpadding="3" cellspacing="5">
+  <tr>
+    <td align="center" valign="middle"></td>
+    <td align="center" valign="middle">                                    <script type="text/JavaScript">
+//<![CDATA[
+var sealServer=document.location.protocol+"//seals.websiteprotection.com/sealws/51534e59-4184-4e8e-a3bb-2892cbdd56cb.gif";var certServer=document.location.protocol+"//certs.websiteprotection.com/sealws/?sealId=51534e59-4184-4e8e-a3bb-2892cbdd56cb";var hostName="vdimotorsports.com";document.write(unescape('<div style="text-align:center;margin:0 auto;"><a target="_blank" href="'+certServer+'&pop=true" style="display:inline-block;"><img src="'+sealServer+'" alt="Website Protection&#153; Site Scanner protects this website from security threats." title="This Website Protection site seal is issued to '+ hostName +'. Copyright &copy; 2013, all rights reserved."oncontextmenu="alert(\'Copying Prohibited by Law\'); return false;" border="0" /></a><div id="bannerLink"></a></div></div>'));
+//]]>
+</script>
+                    </td>
+    <td align="center" valign="middle"><span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=Aga2EqwBC4Gd5E5Zx58z8wH5hIF99Nsec0iNLKlVLBBzq2UY6iLM1TP"></script></span>                                    
+                    </td>
+    <td align="center" valign="middle"><center>VDI Motorsports a Division of Vertical Doors, Inc.<br>(951) 273-1069</td>
+    <td align="center" valign="middle">
+
+<script type="text/javascript" data-pp-pubid="802aaf6f83" data-pp-placementtype="234x60"> (function (d, t) {
+"use strict";
+var s = d.getElementsByTagName(t)[0], n = d.createElement(t);
+n.src = "//paypal.adtag.where.com/merchant.js";
+s.parentNode.insertBefore(n, s);
+}(document, "script"));
+</script>
+</td>
+  </tr>
+</table><hr>
 		<div class="copyright">
 			<!-- ========== COPYRIGHT ========== -->
 				<?php echo FOOTER_TEXT_BODY; ?> &nbsp;| &nbsp;<a href="<?php echo zen_href_link(FILENAME_PRIVACY)?>"><?php echo BOX_INFORMATION_PRIVACY?></a>
@@ -50,7 +75,7 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 		<?php
 			if($this_is_home_page){
 		?>
-		<div>More Auto Parts Zen Cart Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/auto-parts-zen-cart-templates/" target="_blank">TemplateMonster.com</a></div>
+		<div></div>
 		<?php
 			}
 		?>
